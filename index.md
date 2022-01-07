@@ -2,121 +2,25 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Tutorial abstract
+Supervised deep learning has seen tremendous success, but relies on large amounts of carefully labeled data that are not readily available in many application domains. This inspired the development of alternative approaches, among which self-supervised learning has seen rapid progress and quick adoption in various fields, ranging from natural language processing to image and speech recognition. In self-supervised learning, neural networks are trained on large, unlabeled datasets using pretext tasks (pretraining) before being trained on a downstream task in a supervised manner on (usually much) smaller, labeled datasets (fine-tuning). Self-supervised learning approaches promise to produce robust models that can be adapted to different tasks in a data-efficient way and even begin to outperform supervised approaches.
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+This tutorial provides an overview and introduction to self-supervised learning for a broad audience, ranging from practitioners to researchers and engineers, who want to become familiar with this exciting and emerging area of deep learning. We will focus on key concepts and ideas, including contrastive and non-contrastive approaches and their applications in various domains. The tutorial will also provide a hands-on experience where participants can try out self-supervised learning using Python and Jupyter Notebooks.
 
 
-### Definition lists can be used with HTML syntax.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+# Topic overview
+Within the last three years, self-supervised learning (SSL) has emerged as an important approach for training large neural networks in various domains. For example, impressive advances in natural language processing were made possible by SSL trained language models (such as BERT). These successes inspired research of SSL methods in other communities working with data of different topologies (e.g., computer vision (SimCLR), speech recognition (wave2vec), or graphs). Recent months have seen progress being made with contrastive self-supervised learning methods. Building upon the ideas of contrastive learning, non-contrastive methods are another focus of the field and aim to address shortcomings of contrastive approaches (such as large minibatch sizes and false negatives). Thus, non-contrastive methods are expected to become particularly relevant for practitioners in the future.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+At IJCNN, there has been no tutorial on self-supervised learning in recent years. Given the rapid developments in this field and its increasing importance for research and practical applications, we would like to provide a didactic introduction to self-supervised learning that is aimed at a broad audience and novices in this field. The tutorial will focus on key concepts and architectures that will provide participants with the foundation for understanding advanced concepts they are likely to encounter at the conference.
 
-```
-The final element.
-```
+
+
+# Outline of tutorial structure
+## Part 1. Introduction to self-supervised learning and its applications (1 hour)
+
+We introduce key concepts and ideas of self-supervised learning, focusing on fundamental aspects and challenges in this rapidly emerging field. We cover different approaches, including contrastive methods (such as SimCLR and MoCo) and recent non-contrastive methods (e.g., SwAV, BYOL, SimSiam, VICReg). We highlight selected applications that profited from self-supervised training.
+
+## Part 2. Hands-on experience with self-supervised learning (30 minutes)
+
+We will guide participants through an applied project on self-supervised learning. We will provide code, data, and instructions (using Python and Jupyter notebooks) so that participants can have hands-on experience with self-supervised learning and deepen their understanding gained in the first part of the tutorial. Participants do not have to actively participate in this exercise, but we would like to give them the opportunity to experience SSL firsthand.
